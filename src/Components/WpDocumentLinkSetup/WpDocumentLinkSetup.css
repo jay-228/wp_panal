@@ -1,0 +1,110 @@
+@media (max-width: 767.98px) {
+  .table-responsive {
+  }
+  .table th,
+  .table td {
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+  /* Pagination Styles */
+  .pagination {
+    text-align: right;
+  }
+}
+@media (max-width: 767.98px) {
+  .table-responsive {
+    width: 400px;
+  }
+}
+
+/* Default table width for larger screens */
+.table-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Adjust table width for medium screens */
+@media (max-width: 992px) {
+  .table-wrapper {
+    max-width: 800px;
+  }
+}
+
+/* Adjust table width for small screens */
+@media (max-width: 768px) {
+  .table-wrapper {
+    max-width: 600px;
+  }
+}
+
+/* Adjust table width for extra small screens */
+@media (max-width: 576px) {
+  .table-wrapper {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}
+
+/* Add this CSS to your WpDocumentLinkSetup.css file */
+
+/* Default styles for larger screens */
+.responsive-btn {
+  margin-right: 10px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .responsive-btn {
+    margin-right: 0;
+    margin-bottom: 10px; /* Add some space between the buttons when stacked */
+    width: 100%; /* Make buttons full-width */
+  }
+
+  .d-flex.justify-content-center.mt-5 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Add this CSS to your existing styles or in the WpDocumentLinkSetup.css file */
+
+/* Default styles for larger screens */
+.d-flex.justify-content-center.mt-5 button {
+  margin-right: 10px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .d-flex.justify-content-center.mt-5 {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .d-flex.justify-content-center.mt-5 button {
+    margin-bottom: 10px;
+    width: 200px;
+  }
+}
+
+/* Add this CSS to your existing styles or in the WpDocumentLinkSetup.css file */
+
+/* Default styles for larger screens */
+.d-flex.align-items-center.mb-3 .input-group {
+  width: 280px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .d-flex.align-items-center.mb-3 {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .d-flex.align-items-center.mb-3 .input-group {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .d-flex.align-items-center.mb-3 .form-label {
+    margin-bottom: 10px;
+  }
+}

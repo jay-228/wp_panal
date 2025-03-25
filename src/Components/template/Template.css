@@ -1,0 +1,79 @@
+/* Container for label and dropdown */
+.dropdown-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between label and dropdown */
+}
+
+/* Default styles for the dropdown menu */
+.input-group {
+  width: 250px;
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .input-group {
+    width: 80%;
+  }
+
+  .dropdown-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-label,
+  .form-select {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Media query for screens smaller than 480px */
+@media (max-width: 480px) {
+  .form-label,
+  .form-select {
+    font-size: 12px; /* Further reduce font size for very small screens */
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* Default styles for buttons */
+.action-buttons .btn {
+  padding: 5px 10px;
+  font-size: 14px;
+  margin: 2px;
+}
+
+/* Media query for screens smaller than 768px (e.g., tablets) */
+@media (max-width: 768px) {
+  .action-buttons .btn {
+    padding: 4px 8px;
+    font-size: 12px;
+    margin: 1px;
+  }
+}
+
+/* Media query for screens smaller than 480px (e.g., mobile phones) */
+@media (max-width: 480px) {
+  .action-buttons .btn {
+    padding: 3px 6px;
+    font-size: 10px;
+    margin: 1px;
+  }
+
+  /* Stack buttons vertically on very small screens */
+  .action-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .action-buttons .btn {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
+
+/* Adjust the Action column width */
+.action-column {
+  width: 120px; /* Slightly larger than the button width for padding */
+}

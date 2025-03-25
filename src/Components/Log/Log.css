@@ -1,0 +1,67 @@
+.input-group {
+  position: relative;
+}
+
+.input-group-text {
+  cursor: pointer;
+  background-color: #fff;
+  border-left: none;
+}
+
+.input-group-append {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  border-left: none;
+  padding: 0.375rem 0.75rem;
+}
+
+.input-group .form-control {
+  border-right: none;
+}
+
+.input-group .form-control:focus {
+  box-shadow: none;
+}
+
+.input-group .input-group-append:hover {
+  background-color: #d6d8db;
+}
+
+/* Default styles for larger screens */
+.gg {
+  overflow-x: auto;
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .mobile-table-container {
+    width: 100%; /* Ensure the container takes full width */
+    overflow-x: auto; /* Enable horizontal scrolling */
+  }
+
+  .mobile-table-container table {
+    width: 100%; /* Ensure the table takes full width */
+    font-size: 12px; /* Reduce font size for better readability */
+  }
+
+  .mobile-table-container th,
+  .mobile-table-container td {
+    padding: 0.5rem; /* Reduce padding for compactness */
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+
+  .mobile-table-container thead th {
+    font-size: 12px; /* Reduce header font size */
+  }
+}
+
+.table td:nth-child(5), 
+.table td:nth-child(7) { /* Targeting RestResponse columns */
+  max-width: 200px; /* Adjust width as needed */
+  word-wrap: break-word;
+  white-space: pre-wrap; /* Preserve line breaks */
+}

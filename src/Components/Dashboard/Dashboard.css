@@ -1,0 +1,52 @@
+/* Dashboard.css */
+
+/* Custom styles for the dashboard */
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-value {
+    font-size: 2rem;
+  }
+}
+.dashboard-container {
+  padding: 20px;
+}
+
+.card-clickable {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.card-clickable:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #343a40;
+}
+
+.card-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color:rgba(28, 116, 188, 1);
+  margin: 10px 0;
+}
+
+.addadmin_header {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
